@@ -1,0 +1,5 @@
+/*!
+ * Built by BASIS
+ * Copyright BASIS International Ltd.
+ */
+const t=(t,e,o=500)=>{let s,a,c=0,n=0;const u=l=>{a=l,n=Date.now(),n-c>=o&&e(s,a),t.removeEventListener("mouseup",u)};t.addEventListener("mousedown",(e=>{c=Date.now(),s=e,t.addEventListener("mouseup",u)}))},e=(t,e=500,o=40)=>{if(!("ontouchstart"in t))return;let s,a,c;e=Math.abs(+e)||500,o=Math.abs(+o)||40;const n=()=>{s=0,a=NaN,c=NaN};n(),t.addEventListener("touchstart",(t=>{const u=t.changedTouches[0]||{},l=a,i=c;if(a=+u.pageX||+u.clientX||+u.screenX,c=+u.pageY||+u.clientY||+u.screenY,s++,Math.abs(l-a)<o&&Math.abs(i-c)<o){const e=new MouseEvent("dblclick",{view:t.view,bubbles:!0,cancelable:!0,clientX:u.clientX,clientY:u.clientY,altKey:t.altKey,ctrlKey:t.ctrlKey,shiftKey:t.shiftKey,metaKey:t.metaKey,button:t.button,screenX:u.screenX,screenY:u.screenY,taps:s});t.target.dispatchEvent(e)}setTimeout(n,e)}),!1),t.addEventListener("touchmove",(()=>{n()}),!1)};export{e as a,t as o}

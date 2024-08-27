@@ -1,0 +1,5 @@
+/*!
+ * Built by BASIS
+ * Copyright BASIS International Ltd.
+ */
+function t(t,i){["keydown","input","paste","mousedown","mouseup","contextmenu","drop"].forEach((function(s){t.addEventListener(s,(function(t){let n=this.value;"paste"===s&&(n=(t.clipboardData||window.clipboardData).getData("text")),"drop"===s&&(n=t.dataTransfer.getData("text")),"input"===s&&(this.lastInput=t.data),i(n,s)?(this.oldValue=n,this.oldSelectionStart=this.selectionStart,this.oldSelectionEnd=this.selectionEnd):Object.prototype.hasOwnProperty.call(this,"oldValue")?(this.value=this.oldValue,null!==this.oldSelectionStart&&null!==this.oldSelectionEnd&&this.setSelectionRange(this.oldSelectionStart,this.oldSelectionEnd)):this.value=""}))}))}function i(t){return Intl.NumberFormat().formatToParts(1000.1).find((i=>i.type===t)).value}export{i as g,t as s}

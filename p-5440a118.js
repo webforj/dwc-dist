@@ -1,0 +1,5 @@
+/*!
+ * Built by BASIS
+ * Copyright BASIS International Ltd.
+ */
+class t{constructor(t,s){this.type=t,this.params=s}getType(){return this.type}getParams(){return this.params}}class s extends t{constructor(){super(...arguments),this.store=[]}evaluate(t,s,e){const{throwExceptions:r=!1}=e||{};try{return this.compile(t)(s,...Object.values(s))}catch(e){if(r)throw e;{const r=this.getType();console.warn(`[${r}]: Processing of the expression failed`),console.warn(`[${r}]: Expression = `+t),console.warn(`[${r}]: Params:`,s),console.warn(`[${r}]: Exception:`,e)}return null}}compile(t){if(this.store[t])return this.store[t];let s;if("function"==typeof t)s=t;else{let e=null;e=t.indexOf("return")>=0?t:`return ${t};`,s=new Function(["params"].concat(this.getParams()).join(","),e)}return this.store[t]=s,s}}export{t as A,s as D}

@@ -1,0 +1,5 @@
+/*!
+ * Built by BASIS
+ * Copyright BASIS International Ltd.
+ */
+const t=(t,r,n=1)=>{if(0===t&&0===r)return[];if(void 0===r&&(r=t,t=0),n>0&&t>=r&&(n=-n),n<0&&t<=r)return[];let o=t;const e=[];for(;n>0?o<=r:o>=r;o+=n)e.push(o);return e};function*r(t,r){for(let n=0;n<t.length;n+=r)yield t.slice(n,n+r)}function n(t,r){if(!r||0===r.length)return t;const n=r.map((t=>t.prop)),o=r.map((t=>t.direction));return t.sort(((t,r)=>{let e=0,i=0;for(;e<n.length&&0===i;){const f=s(t,n[e]),c=s(r,n[e]);i=i||("asc"===o[e]?1:"desc"===o[e]?-1:0)*String(f).localeCompare(String(c),void 0,{numeric:"number"==typeof f&&"number"==typeof c,sensitivity:"base"}),e++}return i}))}const o=(t,r,n)=>{for(;r<0;)r+=t.length;for(;n<0;)n+=t.length;if(n>=t.length){let r=n-t.length+1;for(;r--;)t.push(void 0)}t.splice(n,0,t.splice(r,1)[0])};function e(t){return"string"==typeof t?t.split(",").map((t=>t.trim())):t}const s=(t,r,n="")=>{const o=r.includes(".")?r.split("."):[r];let e=t;for(const t of o){if(void 0===e[t])return n;e=e[t]}return e};export{o as a,r as c,s as g,n as m,t as r,e as s}

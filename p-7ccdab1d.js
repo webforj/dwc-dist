@@ -1,0 +1,5 @@
+/*!
+ * Built by BASIS
+ * Copyright BASIS International Ltd.
+ */
+import{f as t}from"./p-00e3df8e.js";class s{constructor(t,...s){this.isConnected=!1,this.host=t,this.slotNames=s,this.handleSlotChange=this.handleSlotChange.bind(this),this.connect()}hasContent(t){return"__main__"===t?this.hasDefault():this.hasCustom(t)}connect(){this.isConnected||(this.host.shadowRoot.addEventListener("slotchange",this.handleSlotChange),this.isConnected=!0)}disconnect(){this.isConnected&&(this.host.shadowRoot.removeEventListener("slotchange",this.handleSlotChange),this.isConnected=!1)}hasDefault(){return Array.from(this.host.childNodes).some((t=>t.nodeType===Node.TEXT_NODE&&""!==t.textContent.trim()||t.nodeType===Node.ELEMENT_NODE&&!t.hasAttribute("slot")))}hasCustom(t){return Array.from(this.host.querySelectorAll(`[slot="${t}"]`)).some((t=>t.parentElement===this.host))}handleSlotChange(t){const s=t.target;(this.slotNames.includes("__main__")&&!s.name||s.name&&this.slotNames.includes(s.name))&&this.updateHost()}updateHost(){t(this.host)}}export{s as S}
