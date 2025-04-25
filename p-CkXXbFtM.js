@@ -1,0 +1,5 @@
+/*!
+ * Built by BASIS
+ * Copyright BASIS International Ltd.
+ */
+var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{};function n(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}function t(e){if(e.__esModule)return e;var n=e.default;if("function"==typeof n){var t=function e(){return this instanceof e?Reflect.construct(n,arguments,this.constructor):n.apply(this,arguments)};t.prototype=n.prototype}else t={};return Object.defineProperty(t,"__esModule",{value:!0}),Object.keys(e).forEach((function(n){var f=Object.getOwnPropertyDescriptor(e,n);Object.defineProperty(t,n,f.get?f:{enumerable:!0,get:function(){return e[n]}})})),t}export{t as a,e as c,n as g}
