@@ -41,7 +41,7 @@ We gratefully acknowledge the work of these open-source projects.
 | uc.micro@2.1.0 | MIT | https://github.com/markdown-it/uc.micro |
 | uuid@8.3.2 | MIT | https://github.com/uuidjs/uuid |
 | vanilla-colorful@0.7.2 | MIT | https://github.com/web-padawan/vanilla-colorful |
-| webswing-api@25.1.0 | Custom: https://www.webswing.org/docs/latest/integrate/javascript-api | - |
+| webswing-api@24.2.0 | Custom: https://www.webswing.org/docs/latest/integrate/javascript-api | - |
 | weekstart@1.1.0 | MIT | https://github.com/gamtiq/weekstart |
 
 ---
