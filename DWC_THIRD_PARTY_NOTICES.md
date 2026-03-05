@@ -26,6 +26,7 @@ We gratefully acknowledge the work of these open-source projects.
 | hotkeys-js@3.10.1 | MIT | https://github.com/jaywcjlove/hotkeys |
 | jw-paginate@1.0.4 | MIT | https://github.com/cornflourblue/jw-paginate |
 | linkify-it@5.0.0 | MIT | https://github.com/markdown-it/linkify-it |
+| lit-html@3.3.2 | BSD-3-Clause | https://github.com/lit/lit |
 | lodash-decorators@6.0.1 | MIT | https://github.com/steelsojka/lodash-decorators |
 | lodash@4.17.21 | MIT | https://github.com/lodash/lodash |
 | markdown-it-emoji@3.0.0 | MIT | https://github.com/markdown-it/markdown-it-emoji |
