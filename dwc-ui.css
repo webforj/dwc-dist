@@ -33,10 +33,14 @@
     );--dwc-color-white:oklch(from var(--dwc-color-default-seed)
       calc(98% + var(--dwc-dark-mode) * -86%)
       calc(c * 1.5) h
-    );--dwc-color-primary-h:223;--dwc-color-primary-s:91%;--dwc-color-success-h:153;--dwc-color-success-s:60%;--dwc-color-warning-h:35;--dwc-color-warning-s:90%;--dwc-color-danger-h:4;--dwc-color-danger-s:90%;--dwc-color-info-h:262;--dwc-color-info-s:65%;--dwc-color-gray-h:0;--dwc-color-gray-s:0%;--dwc-color-default-h:var(--dwc-color-primary-h);--dwc-color-default-s:3%;--dwc-color-body-text:var(--dwc-color-black);--dwc-color-primary-seed:hsl(
-      var(--dwc-color-primary-h),
-      var(--dwc-color-primary-s),
-      50%
+    );--dwc-color-primary-h:223;--dwc-color-primary-s:91%;--dwc-color-success-h:153;--dwc-color-success-s:60%;--dwc-color-warning-h:35;--dwc-color-warning-s:90%;--dwc-color-danger-h:4;--dwc-color-danger-s:90%;--dwc-color-info-h:262;--dwc-color-info-s:65%;--dwc-color-gray-h:0;--dwc-color-gray-s:0%;--dwc-color-default-h:var(--dwc-color-primary-h);--dwc-color-default-s:3%;--dwc-color-body-text:var(--dwc-color-black);--dwc-color-primary-seed:color-mix(
+      in oklch,
+      hsl(
+        var(--dwc-color-primary-h),
+        var(--dwc-color-primary-s),
+        50%
+      ) 100%,
+      hsl(var(--dwc-color-primary-h), 100%, 50%) 0%
     );--dwc-color-primary-5:oklch(from var(--dwc-color-primary-seed) 3% calc(c * 0.1) calc(h + var(--dwc-color-hue-rotate, 3) * 0.9));--dwc-color-primary-text-5:oklch(
       from var(--dwc-color-primary-seed)
       calc(3% + var(--dwc-dark-mode) * 72%)
@@ -216,10 +220,14 @@
     0 0 0 calc(var(--dwc-focus-ring-gap) + var(--dwc-focus-ring-width))
     oklch(from var(--dwc-color-primary-seed)
       calc(55% + var(--dwc-dark-mode) * 25%) c h / var(--dwc-focus-ring-a)
-    );--dwc-color-success-seed:hsl(
-      var(--dwc-color-success-h),
-      var(--dwc-color-success-s),
-      50%
+    );--dwc-color-success-seed:color-mix(
+      in oklch,
+      hsl(
+        var(--dwc-color-success-h),
+        var(--dwc-color-success-s),
+        50%
+      ) 100%,
+      hsl(var(--dwc-color-success-h), 100%, 50%) 0%
     );--dwc-color-success-5:oklch(from var(--dwc-color-success-seed) 3% calc(c * 0.1) calc(h + var(--dwc-color-hue-rotate, 3) * 0.9));--dwc-color-success-text-5:oklch(
       from var(--dwc-color-success-seed)
       calc(3% + var(--dwc-dark-mode) * 72%)
@@ -399,10 +407,14 @@
     0 0 0 calc(var(--dwc-focus-ring-gap) + var(--dwc-focus-ring-width))
     oklch(from var(--dwc-color-success-seed)
       calc(55% + var(--dwc-dark-mode) * 25%) c h / var(--dwc-focus-ring-a)
-    );--dwc-color-warning-seed:hsl(
-      var(--dwc-color-warning-h),
-      var(--dwc-color-warning-s),
-      50%
+    );--dwc-color-warning-seed:color-mix(
+      in oklch,
+      hsl(
+        var(--dwc-color-warning-h),
+        var(--dwc-color-warning-s),
+        50%
+      ) 100%,
+      hsl(var(--dwc-color-warning-h), 100%, 50%) 0%
     );--dwc-color-warning-5:oklch(from var(--dwc-color-warning-seed) 3% calc(c * 0.1) calc(h + var(--dwc-color-hue-rotate, 3) * 0.9));--dwc-color-warning-text-5:oklch(
       from var(--dwc-color-warning-seed)
       calc(3% + var(--dwc-dark-mode) * 72%)
@@ -582,10 +594,14 @@
     0 0 0 calc(var(--dwc-focus-ring-gap) + var(--dwc-focus-ring-width))
     oklch(from var(--dwc-color-warning-seed)
       calc(55% + var(--dwc-dark-mode) * 25%) c h / var(--dwc-focus-ring-a)
-    );--dwc-color-danger-seed:hsl(
-      var(--dwc-color-danger-h),
-      var(--dwc-color-danger-s),
-      50%
+    );--dwc-color-danger-seed:color-mix(
+      in oklch,
+      hsl(
+        var(--dwc-color-danger-h),
+        var(--dwc-color-danger-s),
+        50%
+      ) 100%,
+      hsl(var(--dwc-color-danger-h), 100%, 50%) 0%
     );--dwc-color-danger-5:oklch(from var(--dwc-color-danger-seed) 3% calc(c * 0.1) calc(h + var(--dwc-color-hue-rotate, 3) * 0.9));--dwc-color-danger-text-5:oklch(
       from var(--dwc-color-danger-seed)
       calc(3% + var(--dwc-dark-mode) * 72%)
@@ -765,10 +781,14 @@
     0 0 0 calc(var(--dwc-focus-ring-gap) + var(--dwc-focus-ring-width))
     oklch(from var(--dwc-color-danger-seed)
       calc(55% + var(--dwc-dark-mode) * 25%) c h / var(--dwc-focus-ring-a)
-    );--dwc-color-info-seed:hsl(
-      var(--dwc-color-info-h),
-      var(--dwc-color-info-s),
-      50%
+    );--dwc-color-info-seed:color-mix(
+      in oklch,
+      hsl(
+        var(--dwc-color-info-h),
+        var(--dwc-color-info-s),
+        50%
+      ) 100%,
+      hsl(var(--dwc-color-info-h), 100%, 50%) 0%
     );--dwc-color-info-5:oklch(from var(--dwc-color-info-seed) 3% calc(c * 0.1) calc(h + var(--dwc-color-hue-rotate, 3) * 0.9));--dwc-color-info-text-5:oklch(
       from var(--dwc-color-info-seed)
       calc(3% + var(--dwc-dark-mode) * 72%)
@@ -948,10 +968,14 @@
     0 0 0 calc(var(--dwc-focus-ring-gap) + var(--dwc-focus-ring-width))
     oklch(from var(--dwc-color-info-seed)
       calc(55% + var(--dwc-dark-mode) * 25%) c h / var(--dwc-focus-ring-a)
-    );--dwc-color-gray-seed:hsl(
-      var(--dwc-color-gray-h),
-      var(--dwc-color-gray-s),
-      50%
+    );--dwc-color-gray-seed:color-mix(
+      in oklch,
+      hsl(
+        var(--dwc-color-gray-h),
+        var(--dwc-color-gray-s),
+        50%
+      ) 100%,
+      hsl(var(--dwc-color-gray-h), 100%, 50%) 0%
     );--dwc-color-gray-5:oklch(from var(--dwc-color-gray-seed) 3% calc(c * 0.1) calc(h + var(--dwc-color-hue-rotate, 3) * 0.9));--dwc-color-gray-text-5:oklch(
       from var(--dwc-color-gray-seed)
       calc(3% + var(--dwc-dark-mode) * 72%)
@@ -1131,10 +1155,14 @@
     0 0 0 calc(var(--dwc-focus-ring-gap) + var(--dwc-focus-ring-width))
     oklch(from var(--dwc-color-gray-seed)
       calc(55% + var(--dwc-dark-mode) * 25%) c h / var(--dwc-focus-ring-a)
-    );--dwc-color-default-seed:hsl(
-      var(--dwc-color-default-h),
-      var(--dwc-color-default-s),
-      50%
+    );--dwc-color-default-seed:color-mix(
+      in oklch,
+      hsl(
+        var(--dwc-color-default-h),
+        var(--dwc-color-default-s),
+        50%
+      ) 100%,
+      hsl(var(--dwc-color-default-h), 100%, 50%) 0%
     );--dwc-color-default-5:oklch(from var(--dwc-color-default-seed) 3% calc(c * 0.1) calc(h + var(--dwc-color-hue-rotate, 3) * 0.9));--dwc-color-default-text-5:oklch(
       from var(--dwc-color-default-seed)
       calc(3% + var(--dwc-dark-mode) * 72%)
