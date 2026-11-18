@@ -19,7 +19,7 @@ We gratefully acknowledge the work of these open-source projects.
 | bbj-masks@1.5.2 | MIT\* | - |
 | date-fns-tz@1.3.8 | MIT | https://github.com/marnusw/date-fns-tz |
 | date-fns@2.30.0 | MIT | https://github.com/date-fns/date-fns |
-| dompurify@3.4.13 | (MPL-2.0 OR Apache-2.0) | https://github.com/cure53/DOMPurify |
+| dompurify@3.4.18 | (MPL-2.0 OR Apache-2.0) | https://github.com/cure53/DOMPurify |
 | entities@4.5.0 | BSD-2-Clause | https://github.com/fb55/entities |
 | flatpickr@4.6.13 | MIT | https://github.com/chmln/flatpickr |
 | focus-visible@5.2.0 | W3C | https://github.com/WICG/focus-visible |
@@ -30,7 +30,7 @@ We gratefully acknowledge the work of these open-source projects.
 | lodash-decorators@6.0.1 | MIT | https://github.com/steelsojka/lodash-decorators |
 | lodash@4.18.1 | MIT | https://github.com/lodash/lodash |
 | markdown-it-emoji@3.0.0 | MIT | https://github.com/markdown-it/markdown-it-emoji |
-| markdown-it@14.3.0 | MIT | https://github.com/markdown-it/markdown-it |
+| markdown-it@14.3.3 | MIT | https://github.com/markdown-it/markdown-it |
 | mdurl@2.0.0 | MIT | https://github.com/markdown-it/mdurl |
 | morphdom@2.7.7 | MIT | https://github.com/patrick-steele-idem/morphdom |
 | nouislider@14.7.0 | MIT | https://github.com/leongersen/noUiSlider |
